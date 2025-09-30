@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:linear-gradient(175 deg,black,red);
+    }
+    .card{
+        text-align: center;
+        background-color: rgb(135, 227, 227);
+        border: 2px;
+        height: 710px;
+        width: 470px;
+        border-radius: 5%;
+        
+
+    }
+    button{
+        border-radius: 3px;
+        background-color: rgb(156, 95, 197);
+    }
+</style>
+<body>
+    <div class="card">
+    <form action="submit.html" method="get">
+        <fieldset style="border-color: black;">
+            <legend>Information</legend>
+            <label for="Uname">Username: </label>
+            <input type="text" name="Username" id="uname" autofocus="on" placeholder="Enter username" required maxlength="20"><br>
+            <br>
+            Password: <input type="password" name="pwd" id="pwd" placeholder="Enter password" required minlength="6">
+            <br>
+            <br>
+            Email: <input type="email" name="email" required
+            placeholder="Email Address">
+            <br>
+            <br>
+            Phone: <input type="tel" name="Phone" required placeholder="9176382818">
+            <br>
+            <br>
+            Gender:  
+            Male<input type="radio" name="Gender" value="Male" checked>
+            Female<input type="radio" name="Gender" value="Female" checked>
+            <br>
+            <br>
+            Hobbies : <input type="checkbox" name="h1" value="music" checked>Music
+            <input type="checkbox" name="h1" value="Sports" checked>Sports
+            <input type="checkbox" name="h1" value="Reading" checked>Reading
+            <br>
+            <br>
+            Date of Birth : <input type="date" name="dob" min="2000-01-01" max="2020-09-01">
+            <br><br>
+            Age : <input type="number" name="date" min="5" max="80" step="1" value="18">
+            <br>
+            <br>
+            Favourite Colour : <input type="color" id="profile-color" value="#ffffff">
+            <br>
+            <br>
+            Select Branch : <select name="degree">
+                <option selected disabled hidden>Select branch</option>
+                <optgroup label="Computer Engineering">
+                <option>CE</option>
+                <option>IT</option>
+                <option>CSE</option>
+                <option>AI & DS</option>
+                </optgroup>
+
+                <optgroup label="Other Engineering Branches">
+                    <option>EC</option>
+                    <option>CIVIL</option>
+                    <option>CHEMICAL</option>
+                    <option>MECHANICAL</option>
+                </optgroup>
+
+            </select>
+            <br><br>
+            preferred Browser : <input list="Browser" name="li">
+            <datalist id="Browser">
+                <option value="chrome"></option>
+                <option value="Edge"></option>
+                <option value="firebox"></option>
+
+            </datalist>
+            <br>
+            <br>
+            Address : <textarea name="msg" rows="5" cols="30">Enter the Description</textarea>
+            <br>
+            <br>
+            Level : <input type="range" name="S1" min="0" max="50" step="5" value="25">
+            <br>
+            <br><input type="hidden" name="userid" value="12345">
+            <input type="reset">
+            <input type="button" value="click me">
+            <br>
+            <br>
+            <form method="post" enctype="multipart/form-data" >Upload Resume : <input type="file" name="f1" accept=".pdf,.doc" multiple></form>
+            <br>
+            <br>
+            <button>Submit</button>
+    
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
