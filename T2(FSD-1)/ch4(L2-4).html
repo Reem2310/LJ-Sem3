@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:not(.special){
+            font-style: italic;
+            background-color: aqua;
+        }
+        ul li:nth-child(2){
+            color: red;
+            font-weight: bold;
+        }
+        p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #8A2BE2;
+}
+         p::first-line {
+  font-size: 200%;
+  font-weight: bold;
+  color: #f14713;
+}
+         p::marker{
+  font-size: 200%;
+  font-weight: bold;
+  color: #8A2BE2;
+}
+         
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1 </li>
+        <li>Item 2 </li>
+        <li>Item 3 </li>
+        <li class="special">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    
+<h1>Demo of ::first-letter</h1>
+
+<p>My best friend is Kim jong Unn.</p>
+<p>We live in Dunkburg.</p>
+
+    
+</body>
+</html>

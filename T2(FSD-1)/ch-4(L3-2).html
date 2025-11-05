@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        background-color: lightblue;
+        border: 2px solid navy;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .inline div {
+        display: inline;
+        background-color: yellow;
+        border: 1px solid green;
+    }
+
+    .block span {
+        display: block;
+        background-color: lightcoral;
+        border: 1px solid;
+        color: white;
+    }
+
+    .inline-block div {
+        display:inline;
+        background-color: lawngreen;
+        height: 60px;
+        width: 100px;
+        border: 2px solid green;
+    }
+
+    .none p {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="inline box">
+        <div>Line 1</div>
+        <div>Line 2</div>
+        <div>Line 3</div>
+    </div>
+    <div class="block box">
+        <span>Block 1</span>
+        <span>Block 2</span>
+        <span>Block 3</span>
+    </div>
+    <div class="inline-block box">
+        <div>Block 1</div>
+        <div>Block 2</div>
+        <div>Block 3</div>
+    </div>
+    <div class="none box">
+        <p>This is hidden paragraph</p>
+    </div>
+
+</body>
+
+</html>
