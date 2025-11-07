@@ -1,0 +1,80 @@
+<!-- 
+1) animation-name
+2)animation-duration
+3)animation-delay
+4)animation-timing-function(Linear,ease,ease-in-out,ease-out,ease-in)
+5)animation-iteration-count(number,infinate)
+6)animation-direction(normal,reverse,alterate,alterna.reverse)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        position: relative;
+        height: 100px; 
+        width: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+
+    }
+    @keyframes example {
+        from{
+            background-color:red;
+        }
+        to{
+            background-color: green;
+        }  
+        0%{
+            background-color: rgb(236, 233, 39);
+            left: 0px;
+            top: 0px;
+            transform: rotate(0deg);
+            transform: scale(1);
+        }       
+        25%{
+            background-color: blue;
+            left: 50px;
+            top: 100px;
+            transform: rotate(30deg);
+            transform: scale(2);
+        }
+        50%{
+            background-color: rgb(238, 83, 22);
+            left: 150px;
+            top: 0px;
+            transform: rotate(45deg);
+            transform: scale(1);
+        }
+        75%{
+            background-color: rgb(71, 236, 29);
+            left: 250px;
+            top: 100px; 
+            transform: rotate(60deg);
+            transform: scale(2);
+        }
+        100%{
+            background-color: rgb(228, 10, 10);
+            left: 350px;
+            top: 0px;
+            transform: rotate(90deg);
+            transform: scale(1);
+        }
+    
+    }
+
+</style>
+<body>
+    <div></div>
+</body>
+</html>
