@@ -1,0 +1,42 @@
+<!-- 2) write a html and css code that show a menu that will float to right of the page if the viewport is 300px width  if the viewport is less than 300px the menu will be top of the center -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{display: flex;}
+    nav{
+        background-color: lightblue;
+        padding: 10px;
+        width: 30%;
+        text-align: center;
+    }
+    section{
+        background-color: lavender;
+        padding: 10px;
+        width: 70px;
+    }
+    @media (max-width:380px){
+        .container{
+            flex-direction: column;
+        }
+        nav,section{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contant</a>
+        </nav>
+        <section><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vitae vel ducimus perferendis eaque, quas cum tenetur nostrum voluptatibus dolor distinctio ipsam, dignissimos quos cupiditate? Atque veniam consequuntur distinctio animi explicabo possimus optio numquam, libero doloribus nulla quia tempora mollitia corrupti delectus vitae blanditiis, labore commodi maxime placeat repellat hic dolorem perferendis id? Eius, voluptatibus ipsum nulla mollitia aut beatae ab. Accusantium animi assumenda officiis mollitia dolorum saepe nulla aspernatur voluptatibus odio culpa excepturi vero, soluta sunt vel exercitationem iusto labore blanditiis illum, repellendus tenetur explicabo quam, laudantium deleniti. Expedita eos odit veniam voluptate voluptas minima reprehenderit non ab rem.</p></section>
+    </div>
+</body>
+</html>
