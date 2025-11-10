@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+</head>
+<style>
+    :root{
+        --b:lightblue;
+        --all:solid dashed double dotted;
+        --p20:20px;
+    }
+    p{
+        --c:center; 
+        --b:rgb(165, 42, 42);
+        border-style: var(--all);
+        padding: var(--p20);
+        border-color: var(--b);
+    }
+    h2{
+        color: var(--b);
+        text-align: var(--c);
+    }
+</style>
+<body>
+    <p>Good Moring</p>
+    <h2>India!</h2>
+</body>
+</html>
